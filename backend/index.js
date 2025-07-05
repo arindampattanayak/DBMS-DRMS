@@ -157,7 +157,7 @@ app.post("/api/payments", (req, res) => {
     const amountGiven = parseFloat(amount);
     const updatedBalance = currentBalance - amountGiven;
 
-    // Step 2: Insert into payments table
+    // Step 2: Insert into payments table.
     const insertPaymentQuery = `
       INSERT INTO payments (
         id, retailer_id, retailer_name, contact_number, address,
